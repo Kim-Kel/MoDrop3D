@@ -136,8 +136,9 @@ button { color: inherit; }
 .toolbar-add { top: 66px; left: 22px; }
 .toolbar-view { top: 22px; right: 22px; }
 .toolbar-transform {
-  top: 130px;
+  top: 50%;
   left: 22px;
+  transform: translateY(-50%);
   flex-direction: column;
 }
 
@@ -760,6 +761,12 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 14px;
 }
 .dialog-body { padding: 20px; }
+.dialog-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 15px;
+}
 .check-field {
   display: flex;
   gap: 12px;
@@ -849,6 +856,6 @@ body { font-size: 18px; }
   .sidebar-footer { position: absolute; right: 12px; bottom: 12px; width: 240px; border: 1px solid var(--line); border-radius: 10px; }
   .toast-stack { right: 20px; bottom: 320px; }
   .toolbar-view { right: 12px; top: 12px; }
-  .toolbar-transform { left: 12px; top: 80px; }
+  .toolbar-transform { left: 12px; top: 50%; transform: translateY(-50%); }
   .object-properties { right: 12px; top: 65px; width: min(252px, calc(100% - 82px)); }
 }
