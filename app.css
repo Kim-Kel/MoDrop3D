@@ -422,6 +422,9 @@ button { color: inherit; }
 }
 
 .property-group + .property-group { margin-top: 13px; }
+.action-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.secondary-button.compact { min-height: 34px; padding: 0 10px; font-size: 11px; }
+.secondary-button.compact:disabled { opacity: .38; cursor: default; }
 .property-title {
   display: flex;
   justify-content: space-between;
@@ -830,6 +833,8 @@ body { font-size: 18px; }
 .color-input { height: 42px; }
 .properties-body { padding: 18px; }
 .property-group + .property-group { margin-top: 20px; }
+.action-row { gap: 10px; }
+.secondary-button.compact { min-height: 40px; font-size: 14px; }
 .object-properties { top: 94px; }
 .toast-stack { right: 482px; }
 
